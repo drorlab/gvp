@@ -1,8 +1,10 @@
 # Geometric Vector Perceptron
 
-Code to accompany [Learning from Protein Structure with Geometric Vector Perceptrons](https://arxiv.org/abs/2009.01411) by B Jing, S Eismann, P Suriana, RJL Townshend, and RO Dror.
+Code to accompany [Learning from Protein Structure with Geometric Vector Perceptrons](https://openreview.net/forum?id=1YLJDvSx6J4) by B Jing, S Eismann, P Suriana, RJL Townshend, and RO Dror.
 
 This repository serves two purposes. If you would like to use the architecture for protein design, we provide the pipeline for our experiments as well as our final trained model. If you are interested in adapting the architecture for other purposes, we provide instructions for general use of the GVP.
+
+**UPDATE:** **A PyTorch Geometric version of the GVP is now available at https://github.com/drorlab/gvp-pytorch, emphasizing ease of use and modularity. All future changes will be in PyTorch and pushed to this new repository.**
 
 ## Requirements
 * UNIX environment
@@ -143,3 +145,16 @@ While we provide a data pipeline in `src/datasets.py`, it is specific for the tr
 
 ## Acknowledgements
 The initial implementation of portions of the protein GNN and the input data pipeline were adapted from [Ingraham, et al, NeurIPS 2019](https://github.com/jingraham/neurips19-graph-protein-design).
+
+
+## Citation
+```
+@inproceedings{
+    jing2021learning,
+    title={Learning from Protein Structure with Geometric Vector Perceptrons},
+    author={Bowen Jing and Stephan Eismann and Patricia Suriana and Raphael John Lamarre Townshend and Ron Dror},
+    booktitle={International Conference on Learning Representations},
+    year={2021},
+    url={https://openreview.net/forum?id=1YLJDvSx6J4}
+}
+```
